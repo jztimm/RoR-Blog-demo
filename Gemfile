@@ -25,9 +25,6 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-# Makes errors more readable
-gem 'better_errors', '~> 2.1', '>= 2.1.1'
-
 # Bulma CSS Framework
 gem 'bulma-rails', '~> 0.9.1'
 
@@ -54,7 +51,10 @@ group :development do
   gem 'guard', '~> 2.16', '>= 2.16.2'
 
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  # Makes errors more readable
+  gem 'better_errors', '~> 2.1', '>= 2.1.1'
 end
 
 group :test do
