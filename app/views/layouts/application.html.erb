@@ -27,11 +27,13 @@
           <div class="navbar-end">
             <%= link_to "Create New Post", new_post_path, class: "navbar-item" %>
             <span class="navbar-item">
-              <a class="button is-dark is-inverted">
+              <a>
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-                <span>Github Code</span>
+                <span>
+                  <%= link_to "Github Code", "http://www.github.com", class: "button is-dark is-inverted"%>
+                </span>
               </a>
             </span>
           </div>
