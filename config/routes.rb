@@ -3,9 +3,12 @@ Rails.application.routes.draw do
 
   root "posts#index"
   
+  get 'search', to: 'posts#search'
+  
   resources :posts do
     resources :comments
   end
+
   
 
 end

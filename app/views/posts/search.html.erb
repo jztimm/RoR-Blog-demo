@@ -1,0 +1,5 @@
+<% content_for :page_title, "Search Results"%>
+
+<% @posts.each do |post| %>
+<%= link_to post.title, post_path(post) %><br />
+<%end%>
